@@ -1,5 +1,8 @@
-"""
-"""
+#!/usr/bin/env python3
+'''
+Program for parsing Host, sites and status
+from HTTP log file
+'''
 import re
 from collections import Counter
 import argparse
@@ -9,10 +12,12 @@ KEYS = ["host", "request", "status"]
 
 class LogParser():
     """
+    log parser class which contains functions like parsing
     """
 
     def __init__(self, files, reg, keys_list):
         """
+        constructor for created necessary variables
         """
         self.file = files
         self.reg = reg
@@ -22,6 +27,9 @@ class LogParser():
 
     def _parsing(self):
         """
+        parsing data from log files and returns
+        parsed dictionary, hosts, requests and
+        status
         """
         host_list = []
         request_list = [] 
@@ -42,6 +50,7 @@ class LogParser():
 
     def req_page(self):
         """
+        prints the data of most requested pages
         """
         request_count = Counter(self.request_list)
         print("\nTop 10 Requested pages along with count:\n")
@@ -50,6 +59,8 @@ class LogParser():
 
     def _calculation(self):
         """
+        Calculates percentage of successful and unsuccessful status
+        and returns the unsuccessful requests as well 
         """
         status_count = Counter(self.status_list)
         total = sum(map(int, status_count.values()))
@@ -70,15 +81,22 @@ class LogParser():
         return unreq_count, per_suc, per_unsuc
 
     def successful_per(self):
+        """
+        prints the successful percents of requests
+        """
         
         print(f'\nPercentage of successful requests - {self.per_suc *100}')
 
     def unsuccessful_per(self):
+        """
+        prints the successful percents of requests
+        """
         
         print(f'\nPercentage of unsuccessful requests - {self.per_unsuc *100}')
 
     def mosthost(self):
         """
+        prints the top hosts 
         """
         host_count = Counter(self.host_list)
         print("\nTop 10 Host along with count:\n")
@@ -86,14 +104,19 @@ class LogParser():
             print(f'Host IP - "{key}",  Hits - {value}')
 
     def unsucreq(self):
+        """
+        prints the top unsuccessful requests made
+        """
 
         print("\nTop 10 unsuccessful request along with count:\n")
         for key, value in self.unreq_count.most_common(10):
             print(f'unsuccessful requests - "{key}",  Hits - {value}')
 
     def tophostdata(self):
-        
-        
+        """
+        prints the data of top hosts along with their top requests
+        """
+
         host_count = Counter(self.host_list)
         print("Data of Top 10 hosts, with Top 5 sites with count:")
         for key in host_count.most_common(10):

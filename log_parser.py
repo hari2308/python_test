@@ -125,7 +125,6 @@ class LogParser():
                 if self.dict_list[i]["host"] == key[0]:
                     most_data.append(self.dict_list[i]["request"])
             cov = Counter(most_data)
-            #dict_data[key[0]] = cov.most_common(5)
             print(f"\nSites visited by host '{key[0]}'\n")
             for site, count in cov.most_common(5):
                 print(f"site - '{site}' and no.of visits- {count}")

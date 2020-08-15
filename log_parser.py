@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """
 """
 import re
@@ -12,10 +11,12 @@ class LogParser():
     """
     """
 
-    def __init__(self, file):
+    def __init__(self, files, reg, keys_list):
         """
         """
-        self.file = file
+        self.file = files
+        self.reg = reg
+        self.key_list = keys_list
         self.host_list,self.request_list, self.status_list,self.dict_list = self._parsing()
         self.unreq_count, self.per_suc, self.per_unsuc = self._calculation()
 
@@ -29,12 +30,12 @@ class LogParser():
 
         with open(self.file, "r", encoding='utf-8', errors='ignore') as f:
             log = f.read()
-            my_list = re.findall(MYREX,log)
+            my_list = re.findall(self.reg,log)
             for data in my_list:
                 host_list.append(data[0])
                 request_list.append(data[1])
                 status_list.append(data[2])
-                dicts = dict(map(lambda key, values: (key,values), KEYS, data))
+                dicts = dict(map(lambda key, values: (key,values), self.key_list, data))
                 dict_list.append(dicts)
 
         return host_list, request_list, status_list, dict_list        
@@ -90,6 +91,22 @@ class LogParser():
         for key, value in self.unreq_count.most_common(10):
             print(f'unsuccessful requests - "{key}",  Hits - {value}')
 
+    def tophostdata(self):
+        
+        
+        host_count = Counter(self.host_list)
+        print("Data of Top 10 hosts, with Top 5 sites with count:")
+        for key in host_count.most_common(10):
+            most_data = []
+            for i in range(len(self.dict_list)):
+                if self.dict_list[i]["host"] == key[0]:
+                    most_data.append(self.dict_list[i]["request"])
+            cov = Counter(most_data)
+            #dict_data[key[0]] = cov.most_common(5)
+            print(f"\nSites visited by host '{key[0]}'\n")
+            for site, count in cov.most_common(5):
+                print(f"site - '{site}' and no.of visits- {count}")
+               
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='HTTP Log parser')
@@ -100,14 +117,15 @@ if __name__ == "__main__":
     parser.add_argument("-pu","--per_unsuc", help="percentage of Unsuccessful requests",action='store_true')
     parser.add_argument("-mu","--most_unreq", help="Mosted unsuccessful requests",action='store_true')
     parser.add_argument("-ip","--host", help="Most requested by host and there count",action='store_true')
+    parser.add_argument("-tp","--top",help="prints the  top 10 data",action='store_true')
     args = parser.parse_args()
 
-    arg = [args.most_req,args.per_suc,args.per_unsuc,args.most_unreq,args.host]
+    arg = [args.most_req,args.per_suc,args.per_unsuc,args.most_unreq,args.host,args.top]
 
     if args.all == any(arg):
         args.all = False
 
-    LOG = LogParser(args.logfile)
+    LOG = LogParser(args.logfile, MYREX, KEYS)
 
     if args.all or args.most_req:
         LOG.req_page()
@@ -119,3 +137,5 @@ if __name__ == "__main__":
         LOG.unsuccessful_per()
     if args.all or args.most_unreq:
         LOG.unsucreq()
+    if args.all or args.top:
+        LOG.tophostdata()

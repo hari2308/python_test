@@ -93,19 +93,29 @@ class LogParser():
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='HTTP Log parser')
-    parser.add_argument("--logfile", help="logfile input")
-    parser.add_argument("--most_req", help="Mosted requested pages and count")
-    parser.add_argument("--per_suc", help="percentage of Successful requests ")
-    parser.add_argument("--per_unsuc", help="percentage of Unsuccessful requests")
-    parser.add_argument("--most_unreq", help="Mosted unsuccessful requests")
-    parser.add_argument("--host", help="Most requested by host and there count")
+    parser.add_argument("-l","--logfile", help="logfile input", required=True)
+    parser.add_argument("-a","--all", help="prints all data", default=True)
+    parser.add_argument("-rq","--most_req", help="Mosted requested pages and count",action='store_true')
+    parser.add_argument("-ps","--per_suc", help="percentage of Successful requests ",action='store_true')
+    parser.add_argument("-pu","--per_unsuc", help="percentage of Unsuccessful requests",action='store_true')
+    parser.add_argument("-mu","--most_unreq", help="Mosted unsuccessful requests",action='store_true')
+    parser.add_argument("-ip","--host", help="Most requested by host and there count",action='store_true')
     args = parser.parse_args()
 
+    arg = [args.most_req,args.per_suc,args.per_unsuc,args.most_unreq,args.host]
+
+    if args.all == any(arg):
+        args.all = False
 
     LOG = LogParser(args.logfile)
 
-    LOG.req_page()
-    LOG.mosthost()
-    LOG.successful_per()
-    LOG.unsuccessful_per()
-    LOG.unsucreq()
+    if args.all or args.most_req:
+        LOG.req_page()
+    if args.all or args.host:
+        LOG.mosthost()
+    if args.all or args.per_suc:
+        LOG.successful_per()
+    if args.all or args.per_unsuc:
+        LOG.unsuccessful_per()
+    if args.all or args.most_unreq:
+        LOG.unsucreq()

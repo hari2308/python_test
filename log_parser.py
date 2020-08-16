@@ -145,7 +145,7 @@ class LogParser():
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='HTTP Log parser')
-    parser.add_argument("-l", "--logfile", help="logfile input",\
+    parser.add_argument("-l", "--logfile", help="log file input",\
                         type=LogParser.checkfile, required=True)
     parser.add_argument("-a", "--all", help="prints all data", default=True)
     parser.add_argument("-rq", "--most_req", help="Mosted requested pages and count", \
@@ -154,7 +154,7 @@ if __name__ == "__main__":
                         action='store_true')
     parser.add_argument("-pu", "--per_unsuc", help="percentage of Unsuccessful requests",\
                         action='store_true')
-    parser.add_argument("-mu", "--most_unreq", help="Mosted unsuccessful requests", \
+    parser.add_argument("-mu", "--most_unreq", help="Most unsuccessful requests", \
                         action='store_true')
     parser.add_argument("-ip", "--host", \
                         help="Most requested by host and there count",\

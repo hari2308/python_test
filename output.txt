@@ -1,29 +1,29 @@
 
 Top 10 Requested pages along with count:
 
-Request page - "/images/NASA-logosmall.gif",  Hits - 97384
-Request page - "/images/KSC-logosmall.gif",  Hits - 75332
-Request page - "/images/MOSAIC-logosmall.gif",  Hits - 67441
-Request page - "/images/USA-logosmall.gif",  Hits - 67061
-Request page - "/images/WORLD-logosmall.gif",  Hits - 66437
-Request page - "/images/ksclogo-medium.gif",  Hits - 62771
-Request page - "/ksc.html",  Hits - 43683
-Request page - "/history/apollo/images/apollo-logo1.gif",  Hits - 37824
-Request page - "/images/launch-logo.gif",  Hits - 35135
-Request page - "/",  Hits - 30326
+  Request page - "/images/NASA-logosmall.gif",  Hits - 97384
+  Request page - "/images/KSC-logosmall.gif",  Hits - 75332
+  Request page - "/images/MOSAIC-logosmall.gif",  Hits - 67441
+  Request page - "/images/USA-logosmall.gif",  Hits - 67061
+  Request page - "/images/WORLD-logosmall.gif",  Hits - 66437
+  Request page - "/images/ksclogo-medium.gif",  Hits - 62771
+  Request page - "/ksc.html",  Hits - 43683
+  Request page - "/history/apollo/images/apollo-logo1.gif",  Hits - 37824
+  Request page - "/images/launch-logo.gif",  Hits - 35135
+  Request page - "/",  Hits - 30326
 
 Top 10 Host along with count:
 
-Host IP - "edams.ksc.nasa.gov",  Hits - 6464
-Host IP - "piweba4y.prodigy.com",  Hits - 4735
-Host IP - "163.206.89.4",  Hits - 4682
-Host IP - "piweba5y.prodigy.com",  Hits - 4487
-Host IP - "piweba3y.prodigy.com",  Hits - 4313
-Host IP - "www-d1.proxy.aol.com",  Hits - 3790
-Host IP - "www-b2.proxy.aol.com",  Hits - 3431
-Host IP - "www-b3.proxy.aol.com",  Hits - 3389
-Host IP - "www-c5.proxy.aol.com",  Hits - 3334
-Host IP - "www-b5.proxy.aol.com",  Hits - 3321
+  Host IP - "edams.ksc.nasa.gov",  Hits - 6464
+  Host IP - "piweba4y.prodigy.com",  Hits - 4735
+  Host IP - "163.206.89.4",  Hits - 4682
+  Host IP - "piweba5y.prodigy.com",  Hits - 4487
+  Host IP - "piweba3y.prodigy.com",  Hits - 4313
+  Host IP - "www-d1.proxy.aol.com",  Hits - 3790
+  Host IP - "www-b2.proxy.aol.com",  Hits - 3431
+  Host IP - "www-b3.proxy.aol.com",  Hits - 3389
+  Host IP - "www-c5.proxy.aol.com",  Hits - 3334
+  Host IP - "www-b5.proxy.aol.com",  Hits - 3321
 
 Percentage of successful requests - 99.37%
 
@@ -31,94 +31,95 @@ Percentage of unsuccessful requests - 0.63%
 
 Top 10 unsuccessful request along with count:
 
-unsuccessful requests - "/pub/winvn/readme.txt",  Hits - 1337
-unsuccessful requests - "/pub/winvn/release.txt",  Hits - 1185
-unsuccessful requests - "/shuttle/missions/STS-69/mission-STS-69.html",  Hits - 683
-unsuccessful requests - "/images/nasa-logo.gif",  Hits - 319
-unsuccessful requests - "/shuttle/missions/sts-68/ksc-upclose.gif",  Hits - 253
-unsuccessful requests - "/elv/DELTA/uncons.htm",  Hits - 209
-unsuccessful requests - "/history/apollo/sa-1/sa-1-patch-small.gif",  Hits - 200
-unsuccessful requests - "/images/crawlerway-logo.gif",  Hits - 160
-unsuccessful requests - "/history/apollo/a-001/a-001-patch-small.gif",  Hits - 154
-unsuccessful requests - "/history/apollo/pad-abort-test-1/pad-abort-test-1-patch-small.gif",  Hits - 144
+  unsuccessful requests - "/pub/winvn/readme.txt",  Hits - 1337
+  unsuccessful requests - "/pub/winvn/release.txt",  Hits - 1185
+  unsuccessful requests - "/shuttle/missions/STS-69/mission-STS-69.html",  Hits - 683
+  unsuccessful requests - "/images/nasa-logo.gif",  Hits - 319
+  unsuccessful requests - "/shuttle/missions/sts-68/ksc-upclose.gif",  Hits - 253
+  unsuccessful requests - "/elv/DELTA/uncons.htm",  Hits - 209
+  unsuccessful requests - "/history/apollo/sa-1/sa-1-patch-small.gif",  Hits - 200
+  unsuccessful requests - "/images/crawlerway-logo.gif",  Hits - 160
+  unsuccessful requests - "/history/apollo/a-001/a-001-patch-small.gif",  Hits - 154
+  unsuccessful requests - "/history/apollo/pad-abort-test-1/pad-abort-test-1-patch-small.gif",  Hits - 144
+
 Data of Top 10 hosts, with Top 5 sites with count:
 
-Sites visited by host 'edams.ksc.nasa.gov'
+ Sites visited by host 'edams.ksc.nasa.gov'
 
-site - '/ksc.html' and no.of visits- 1020
-site - '/images/WORLD-logosmall.gif' and no.of visits- 870
-site - '/images/NASA-logosmall.gif' and no.of visits- 869
-site - '/images/MOSAIC-logosmall.gif' and no.of visits- 867
-site - '/images/USA-logosmall.gif' and no.of visits- 867
+   site - '/ksc.html' and no.of visits- 1020
+   site - '/images/WORLD-logosmall.gif' and no.of visits- 870
+   site - '/images/NASA-logosmall.gif' and no.of visits- 869
+   site - '/images/MOSAIC-logosmall.gif' and no.of visits- 867
+   site - '/images/USA-logosmall.gif' and no.of visits- 867
 
-Sites visited by host 'piweba4y.prodigy.com'
+ Sites visited by host 'piweba4y.prodigy.com'
 
-site - '/images/KSC-logosmall.gif' and no.of visits- 329
-site - '/images/NASA-logosmall.gif' and no.of visits- 260
-site - '/history/apollo/images/apollo-logo1.gif' and no.of visits- 177
-site - '/images/launch-logo.gif' and no.of visits- 158
-site - '/images/ksclogo-medium.gif' and no.of visits- 150
+   site - '/images/KSC-logosmall.gif' and no.of visits- 329
+   site - '/images/NASA-logosmall.gif' and no.of visits- 260
+   site - '/history/apollo/images/apollo-logo1.gif' and no.of visits- 177
+   site - '/images/launch-logo.gif' and no.of visits- 158
+   site - '/images/ksclogo-medium.gif' and no.of visits- 150
 
-Sites visited by host '163.206.89.4'
+ Sites visited by host '163.206.89.4'
 
-site - '/images/NASA-logosmall.gif' and no.of visits- 568
-site - '/htbin/cdt_main.pl' and no.of visits- 360
-site - '/shuttle/countdown/images/countclock.gif' and no.of visits- 347
-site - '/ksc.html' and no.of visits- 251
-site - '/images/USA-logosmall.gif' and no.of visits- 237
+   site - '/images/NASA-logosmall.gif' and no.of visits- 568
+   site - '/htbin/cdt_main.pl' and no.of visits- 360
+   site - '/shuttle/countdown/images/countclock.gif' and no.of visits- 347
+   site - '/ksc.html' and no.of visits- 251
+   site - '/images/USA-logosmall.gif' and no.of visits- 237
 
-Sites visited by host 'piweba5y.prodigy.com'
+ Sites visited by host 'piweba5y.prodigy.com'
 
-site - '/images/KSC-logosmall.gif' and no.of visits- 267
-site - '/images/NASA-logosmall.gif' and no.of visits- 230
-site - '/images/ksclogo-medium.gif' and no.of visits- 152
-site - '/history/apollo/images/apollo-logo1.gif' and no.of visits- 143
-site - '/images/launch-logo.gif' and no.of visits- 141
+   site - '/images/KSC-logosmall.gif' and no.of visits- 267
+   site - '/images/NASA-logosmall.gif' and no.of visits- 230
+   site - '/images/ksclogo-medium.gif' and no.of visits- 152
+   site - '/history/apollo/images/apollo-logo1.gif' and no.of visits- 143
+   site - '/images/launch-logo.gif' and no.of visits- 141
 
-Sites visited by host 'piweba3y.prodigy.com'
+ Sites visited by host 'piweba3y.prodigy.com'
 
-site - '/images/KSC-logosmall.gif' and no.of visits- 287
-site - '/images/NASA-logosmall.gif' and no.of visits- 241
-site - '/history/apollo/images/apollo-logo1.gif' and no.of visits- 147
-site - '/images/launch-logo.gif' and no.of visits- 142
-site - '/images/ksclogo-medium.gif' and no.of visits- 137
+   site - '/images/KSC-logosmall.gif' and no.of visits- 287
+   site - '/images/NASA-logosmall.gif' and no.of visits- 241
+   site - '/history/apollo/images/apollo-logo1.gif' and no.of visits- 147
+   site - '/images/launch-logo.gif' and no.of visits- 142
+   site - '/images/ksclogo-medium.gif' and no.of visits- 137
 
-Sites visited by host 'www-d1.proxy.aol.com'
+ Sites visited by host 'www-d1.proxy.aol.com'
 
-site - '/images/NASA-logosmall.gif' and no.of visits- 183
-site - '/images/KSC-logosmall.gif' and no.of visits- 166
-site - '/images/ksclogo-medium.gif' and no.of visits- 128
-site - '/images/WORLD-logosmall.gif' and no.of visits- 121
-site - '/images/MOSAIC-logosmall.gif' and no.of visits- 117
+   site - '/images/NASA-logosmall.gif' and no.of visits- 183
+   site - '/images/KSC-logosmall.gif' and no.of visits- 166
+   site - '/images/ksclogo-medium.gif' and no.of visits- 128
+   site - '/images/WORLD-logosmall.gif' and no.of visits- 121
+   site - '/images/MOSAIC-logosmall.gif' and no.of visits- 117
 
-Sites visited by host 'www-b2.proxy.aol.com'
+ Sites visited by host 'www-b2.proxy.aol.com'
 
-site - '/images/NASA-logosmall.gif' and no.of visits- 199
-site - '/images/KSC-logosmall.gif' and no.of visits- 159
-site - '/images/ksclogo-medium.gif' and no.of visits- 134
-site - '/images/MOSAIC-logosmall.gif' and no.of visits- 133
-site - '/images/USA-logosmall.gif' and no.of visits- 131
+   site - '/images/NASA-logosmall.gif' and no.of visits- 199
+   site - '/images/KSC-logosmall.gif' and no.of visits- 159
+   site - '/images/ksclogo-medium.gif' and no.of visits- 134
+   site - '/images/MOSAIC-logosmall.gif' and no.of visits- 133
+   site - '/images/USA-logosmall.gif' and no.of visits- 131
 
-Sites visited by host 'www-b3.proxy.aol.com'
+ Sites visited by host 'www-b3.proxy.aol.com'
 
-site - '/images/NASA-logosmall.gif' and no.of visits- 190
-site - '/images/KSC-logosmall.gif' and no.of visits- 149
-site - '/images/MOSAIC-logosmall.gif' and no.of visits- 134
-site - '/images/ksclogo-medium.gif' and no.of visits- 130
-site - '/images/USA-logosmall.gif' and no.of visits- 128
+   site - '/images/NASA-logosmall.gif' and no.of visits- 190
+   site - '/images/KSC-logosmall.gif' and no.of visits- 149
+   site - '/images/MOSAIC-logosmall.gif' and no.of visits- 134
+   site - '/images/ksclogo-medium.gif' and no.of visits- 130
+   site - '/images/USA-logosmall.gif' and no.of visits- 128
 
-Sites visited by host 'www-c5.proxy.aol.com'
+ Sites visited by host 'www-c5.proxy.aol.com'
 
-site - '/images/NASA-logosmall.gif' and no.of visits- 161
-site - '/images/KSC-logosmall.gif' and no.of visits- 132
-site - '/images/USA-logosmall.gif' and no.of visits- 113
-site - '/images/MOSAIC-logosmall.gif' and no.of visits- 112
-site - '/images/ksclogo-medium.gif' and no.of visits- 108
+   site - '/images/NASA-logosmall.gif' and no.of visits- 161
+   site - '/images/KSC-logosmall.gif' and no.of visits- 132
+   site - '/images/USA-logosmall.gif' and no.of visits- 113
+   site - '/images/MOSAIC-logosmall.gif' and no.of visits- 112
+   site - '/images/ksclogo-medium.gif' and no.of visits- 108
 
-Sites visited by host 'www-b5.proxy.aol.com'
+ Sites visited by host 'www-b5.proxy.aol.com'
 
-site - '/images/NASA-logosmall.gif' and no.of visits- 164
-site - '/images/KSC-logosmall.gif' and no.of visits- 147
-site - '/images/ksclogo-medium.gif' and no.of visits- 116
-site - '/images/USA-logosmall.gif' and no.of visits- 116
-site - '/images/MOSAIC-logosmall.gif' and no.of visits- 116
+   site - '/images/NASA-logosmall.gif' and no.of visits- 164
+   site - '/images/KSC-logosmall.gif' and no.of visits- 147
+   site - '/images/ksclogo-medium.gif' and no.of visits- 116
+   site - '/images/USA-logosmall.gif' and no.of visits- 116
+   site - '/images/MOSAIC-logosmall.gif' and no.of visits- 116

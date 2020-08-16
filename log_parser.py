@@ -57,7 +57,7 @@ class LogParser():
         request_count = Counter(self.request_list)
         print("\nTop 10 Requested pages along with count:\n")
         for key, value in request_count.most_common(10):
-            print(f'Request page - "{key}",  Hits - {value}')
+            print(f'  Request page - "{key}",  Hits - {value}')
 
     def _calculation(self):
         """
@@ -103,7 +103,7 @@ class LogParser():
         host_count = Counter(self.host_list)
         print("\nTop 10 Host along with count:\n")
         for key, value in host_count.most_common(10):
-            print(f'Host IP - "{key}",  Hits - {value}')
+            print(f'  Host IP - "{key}",  Hits - {value}')
 
     def unsucreq(self):
         """
@@ -112,7 +112,7 @@ class LogParser():
 
         print("\nTop 10 unsuccessful request along with count:\n")
         for key, value in self.unreq_count.most_common(10):
-            print(f'unsuccessful requests - "{key}",  Hits - {value}')
+            print(f'  unsuccessful requests - "{key}",  Hits - {value}')
 
     def tophostdata(self):
         """
@@ -120,16 +120,16 @@ class LogParser():
         """
 
         host_count = Counter(self.host_list)
-        print("Data of Top 10 hosts, with Top 5 sites with count:")
+        print("\nData of Top 10 hosts, with Top 5 sites with count:")
         for key in host_count.most_common(10):
             most_data = []
             for i in range(len(self.dict_list)):
                 if self.dict_list[i]["host"] == key[0]:
                     most_data.append(self.dict_list[i]["request"])
             cov = Counter(most_data)
-            print(f"\nSites visited by host '{key[0]}'\n")
+            print(f"\n Sites visited by host '{key[0]}'\n")
             for site, count in cov.most_common(5):
-                print(f"site - '{site}' and no.of visits- {count}")
+                print(f"   site - '{site}' and no.of visits- {count}")
 
     @staticmethod
     def checkfile(files):

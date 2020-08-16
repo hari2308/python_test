@@ -6,6 +6,7 @@ from HTTP log file
 import re
 from collections import Counter
 import argparse
+import os
 
 MYREX = r'([\w\d.-]+)\s-\s(?:\w+|-)\s\[\w+/[A-Za-z]+/\w+:\w+:\w+:\w+ -\w+]\s\"[A-Z]+\s([\d\w./-]+)\s?(?:[\w/.]+|)\"\s(\d+)\s+[\w-]+'
 KEYS = ["host", "request", "status"]
@@ -130,10 +131,22 @@ class LogParser():
             for site, count in cov.most_common(5):
                 print(f"site - '{site}' and no.of visits- {count}")
 
+    @staticmethod
+    def checkfile(files):
+        """
+        Used for checking if passed file exist or not at argument
+        level.
+        """
+        if not os.path.isfile(files):
+            raise argparse.ArgumentTypeError(f"{files} - file doesn't exist")
+
+        return files
+
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='HTTP Log parser')
-    parser.add_argument("-l", "--logfile", help="logfile input", required=True)
+    parser.add_argument("-l", "--logfile", help="logfile input",\
+                        type=LogParser.checkfile, required=True)
     parser.add_argument("-a", "--all", help="prints all data", default=True)
     parser.add_argument("-rq", "--most_req", help="Mosted requested pages and count", \
                         action='store_true')

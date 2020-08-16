@@ -86,14 +86,14 @@ class LogParser():
         prints the successful percents of requests
         """
 
-        print(f'\nPercentage of successful requests - {self.per_suc *100}')
+        print('\nPercentage of successful requests - {:0.2f}%'.format(self.per_suc *100))
 
     def unsuccessful_per(self):
         """
         prints the successful percents of requests
         """
 
-        print(f'\nPercentage of unsuccessful requests - {self.per_unsuc *100}')
+        print('\nPercentage of unsuccessful requests - {:0.2f}%'.format(self.per_unsuc *100))
 
     def mosthost(self):
         """

@@ -25,9 +25,9 @@ Host IP - "www-b3.proxy.aol.com",  Hits - 3389
 Host IP - "www-c5.proxy.aol.com",  Hits - 3334
 Host IP - "www-b5.proxy.aol.com",  Hits - 3321
 
-Percentage of successful requests - 99.3725179487013
+Percentage of successful requests - 99.37%
 
-Percentage of unsuccessful requests - 0.6274820512987034
+Percentage of unsuccessful requests - 0.63%
 
 Top 10 unsuccessful request along with count:
 
